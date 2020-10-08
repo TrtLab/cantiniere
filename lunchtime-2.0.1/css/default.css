@@ -162,16 +162,16 @@ p {
 }
 
 .nav-item .active {
-    border: 1px solid #F75151;
-    background-color: #F75151;
+    border: 1px solid #006ec8;
+    background-color: #fff;
 }
 
 .nav-link {
-    background-color: #FFFFFF;
+    background-color: #f2f8f9;
     display: flex;
     text-decoration: none;
-    color: #F75151;
-    border: 1px solid #F75151;
+    color: #151515;
+    border: 1px solid #f2f8f9;
     max-height: 79px;
     min-width: 246px;
 }
@@ -206,7 +206,7 @@ p {
 }
 
 .nav-item .active .text-link h5 {
-    color: #ffffff;
+    color: #000000;
 }
 
 #menu-carte {
