@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="80" height="80" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_51" data-name="Groupe 51" transform="translate(-1579 -211)">
+    <g id="icons_dark_card" data-name="icons/dark/card" transform="translate(1579 211)" clip-path="url(#clip-path)">
+      <rect id="Rectangle_499" data-name="Rectangle 499" width="80" height="80" fill="#fff" opacity="0.004"/>
+      <rect id="Rectangle_454" data-name="Rectangle 454" width="64" height="52" rx="2" transform="translate(8 15)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Ligne_87" data-name="Ligne 87" x2="64.438" transform="translate(7.573 36.003)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    <text id="_" data-name="€" transform="translate(1606 243.5)" fill="#fff" font-size="30" font-family="Noteworthy-Light, Noteworthy" font-weight="300"><tspan x="0" y="32">€</tspan></text>
+  </g>
+</svg>
