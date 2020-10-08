@@ -1,4 +1,5 @@
-$(document).ready(function () {
+window.addEventListener("load", async () => {
+
     console.log("autre coucou");
 
     // Header component
@@ -12,14 +13,23 @@ $(document).ready(function () {
         template.replaceWith(comp);
     }
 
-    const loadAllComponents = () => {
+    const loadAllComponents = async () => {
         let comps = document.querySelectorAll("template[component]");
-        comps.forEach(loadComponent)
+        for (let comp of comps){
+            await loadComponent(comp)
+        }
     }
 
     // window.addEventListener('load', ()=>{
-    loadAllComponents();
+    await loadAllComponents();
     // });
+
+    console.log($("#monBouton"));
+    console.log($("#myModal"));
+    
+    $("#monBouton").click(function () {
+        $("#myModal").addClass("modal-on");
+    });
 
     /**MENU TAB */
 
@@ -141,14 +151,8 @@ $(document).ready(function () {
 
     });
 
-    console.log("Modal :", $('#myModal'));
-    console.log("Bouton :", $('#monBouton'));
-
-    $("#monBouton").click(function() {
-        $("#myModal").addClass("modal-on");
-    });
-
-    $("#inscription").click(function() {
+    $("#inscription").click(function () {
         $("#modal-inscription").addClass("modal-on");
     })
+
 });
