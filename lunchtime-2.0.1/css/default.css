@@ -134,10 +134,9 @@ p {
     content: "";
     width: 275px;
     height: 1px;
-    background-color: #006ec8;
+    background-color: #dadada;
     top: 32px;
 }
-
 
 /** MENU NAV ITEM*/
 
@@ -1192,7 +1191,7 @@ ul.contact li a:hover {
 }
 
 .dot {
-    color: #006ec8;
+    color: red;
 }
 
 .alert {
@@ -1283,6 +1282,26 @@ ul.contact li a:hover {
     outline: none;
 }
 
+/*********************************************************************************/
+
+
+/* Homepage                                                             */
+
+
+/*********************************************************************************/
+.wrapper-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../images/slider/slider-2.jpg);
+    min-height: 500px;
+    color: white;
+}
+
+.wrapper-main h1{
+    text-align: center;
+    }
+
 @media screen and (max-width: 1280px) {
     #sidebar {
         display: flex;
@@ -1329,3 +1348,143 @@ ul.contact li a:hover {
         margin-top: 20px;
     }
 }
+
+/*********************************************************************************/
+
+
+/* Modale de connexion/inscrption                                                */
+
+
+/*********************************************************************************/
+
+/* Bouton de connexion */
+.connect-btn {
+    background-color: #333333;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.8px;
+    border: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 0;
+    width: 25%; /* Full width */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+  }
+
+  .modal-on {
+      display: block;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    top: 70px;
+    width: 20%;
+    padding-bottom: 1em;
+    background-color: #333333;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    border-radius: 3%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: whitesmoke;
+    float: right;
+    margin-right: 3%;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+      padding: 2px 16px;
+    }
+  
+  .modal-footer {
+    padding: 8px 16px;
+    background-color: #333333;
+    color: white;
+  }
+
+  #mdpoublie {
+    color: whitesmoke;
+    font-size: smaller;
+    letter-spacing: 0.8px;
+    text-align: center;
+  }
+
+  .form-modal {
+      padding-top: 1rem;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+  }
+
+  label {
+      margin-bottom: 0.5rem;
+  }
+
+  .bouton {
+      display: flex;
+      justify-content: center;
+      margin-top: 1em;
+  }
+
+.modal-btn {
+    border-style: none;
+    padding: 2% 10%;
+    background-color: #5c99ce;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.8px;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+  
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
