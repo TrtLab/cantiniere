@@ -47,7 +47,7 @@
                 </div>
                 <div class="menu-user">
                     <ul class="utility-item">
-                        <li><button id="myBtn" class="button1 comments-btn">Me connecter</button></li>
+                        <li><button id="myBtn" class="connect-btn">Me connecter</button></li>
                         <li>
                             <a href=""><i class="fa fa-shopping-cart"></i></a>
                         </li>
@@ -440,37 +440,37 @@
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
-
+        
         <!--Modal content-->
         <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
+            <span class="close">&times;</span>
+            <!-- <div class="modal-header">
                 <h2>Me connecter</h2>
-            </div>
+            </div> -->
 
             <div class="modal-body">
-                <form id="comments-form" method="post" action="#">
+                <form id="modal-form" method="post" action="#">
 
                     <div class="row">
 
-                        <div class="form-comments">
+                        <div class="form-modal">
 
-                            <label for="email">Email :<span class="blue">*</span></label>
-                            <input id="email" type="email" name="email" class="form-control"
+                            <label for="email">Email :</label>
+                            <input id="modal-email" type="email" name="email" class="form-control"
                                 placeholder="nom@exemple.com">
 
                         </div>
 
-                        <div class="form-comments">
+                        <div class="form-modal">
 
-                            <label for="password">Mot de passe :<span class="blue">*</span></label>
-                            <input id="password" type="texte" name="password" class="form-control"
+                            <label for="password">Mot de passe :</label>
+                            <input id="modal-password" type="texte" name="password" class="form-control"
                                 placeholder="********">
 
                         </div>
 
-                        <div class="form-comments submit">
-                            <input type="submit" class="button1 comments-btn" value="Envoyer">
+                        <div class="form-modal bouton">
+                            <input type="submit" class="button1 modal-btn" value="Envoyer">
                         </div>
 
                     </div>
@@ -479,8 +479,8 @@
             </div>
 
             <div class="modal-footer">
-                <h4>J'ai oublié mon mot de passe</h4>
-                <p>M'inscrire</p>
+                <p id="mdpoublie">J'ai oublié mon mot de passe</p>
+                <button class="connect-btn">M'inscrire</button>
             </div>
         </div>
     </div>
