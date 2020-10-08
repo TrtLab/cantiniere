@@ -1,4 +1,6 @@
-$(document).ready(function() {
+window.addEventListener("load", async () => {
+
+    console.log("autre coucou");
 
     // Header component
     const loadComponent = async (template) => {
@@ -10,19 +12,28 @@ $(document).ready(function() {
         comp.innerHTML = src;
         template.replaceWith(comp);
     }
-    
-    const loadAllComponents = () => {
+
+    const loadAllComponents = async () => {
         let comps = document.querySelectorAll("template[component]");
-        comps.forEach(loadComponent)
+        for (let comp of comps){
+            await loadComponent(comp)
+        }
     }
+
+    // window.addEventListener('load', ()=>{
+    await loadAllComponents();
+    // });
+
+    console.log($("#monBouton"));
+    console.log($("#myModal"));
     
-    window.addEventListener('load', ()=>{
-        loadAllComponents();
+    $("#monBouton").click(function () {
+        $("#myModal").addClass("modal-on");
     });
 
     /**MENU TAB */
 
-    $('.nav-link').click(function(event) {
+    $('.nav-link').click(function (event) {
 
         event.preventDefault();
 
@@ -44,7 +55,7 @@ $(document).ready(function() {
 
     /**SCROLLTOP */
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         if ($(this).scrollTop() > 200) {
 
@@ -56,7 +67,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#scrolltop').click(function() {
+    $('#scrolltop').click(function () {
 
         $("html,body").animate({
 
@@ -70,7 +81,7 @@ $(document).ready(function() {
 
     /**COMMENTAIRES */
 
-    $('#comments-form').submit(function(event) {
+    $('#comments-form').submit(function (event) {
 
         event.preventDefault();
 
@@ -126,7 +137,7 @@ $(document).ready(function() {
 
             $("#success-comments").fadeIn();
 
-            setTimeout(function() {
+            setTimeout(function () {
                 $("#success-comments").slideUp();
             }, 1000)
 
@@ -134,9 +145,14 @@ $(document).ready(function() {
 
     });
 
-    $('#close-modal').click(function() {
+    $('#close-modal').click(function () {
 
         $("#success-comments").slideUp();
 
     });
+
+    $("#inscription").click(function () {
+        $("#modal-inscription").addClass("modal-on");
+    })
+
 });

@@ -134,10 +134,9 @@ p {
     content: "";
     width: 275px;
     height: 1px;
-    background-color: #006ec8;
+    background-color: #dadada;
     top: 32px;
 }
-
 
 /** MENU NAV ITEM*/
 
@@ -1400,7 +1399,6 @@ ul.contact li a:hover {
     border: none;
 }
 
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -1415,12 +1413,17 @@ ul.contact li a:hover {
     animation-name: fadeIn;
     animation-duration: 0.4s;
   }
+
+  .modal-on {
+      display: block;
+  }
   
   /* Modal Content */
   .modal-content {
     position: fixed;
     top: 70px;
     width: 20%;
+    padding-bottom: 1em;
     background-color: #333333;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
