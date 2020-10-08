@@ -259,6 +259,17 @@ p {
     flex: 0 0 50%;
     max-width: 50%;
 }
+.menu-tab-decaler {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 30%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
 
 .menu-item {
     margin-bottom: 45px;
@@ -277,7 +288,7 @@ p {
 }
 
 .menu-item .desc-meta p {
-    color: #b6b5b5;
+    color: #141111;
     font-size: 12px;
     line-height: normal;
     display: table-cell;
