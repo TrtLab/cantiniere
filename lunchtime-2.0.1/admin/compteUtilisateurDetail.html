@@ -5,40 +5,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/compteUtilisateurDetail.css">
-    <script type="text/javascript" src="js/utils.js"></script>
 
-    <title>Profil de Kévin Lorem</title>
+    <title>Détail du profil de Kévin Lorem</title>
   </head>
   <body>
-    <header>
-      <img src="images/baniere_admin.png" alt="banière">
-    </header>
-    <nav>
-      <div class="menu">
-        <div>
-          <img src="images/logo.svg" alt="logo Lunctime">
-        </div>
-        <div>
-          <a href="recapCommande.html">Récap des commandes</a>
-        </div>
-        <div>
-          <a href="platsSemaine.html">Plats de la semaine</a>
-        </div>
-        <div>
-          <a href="carte.html">Carte</a>
-        </div>
-        <div>
-          <a href="compteUtilisateur.html">Compte utilisateur</a>
-        </div>
-        <div>
-          <a href="configuration.html">Configuration</a>
-        </div>
-        <div id="compte">
-          <p>Bonjour Françoise<p>
-          <img src="images/avatar_admin.svg" alt="avatar admin">
-        </div>
-      </div>
-    </nav>
+    <template component="header.html"></template>
 
     <main>
       <div class="infoClient">
@@ -114,6 +85,8 @@
       </div>
     </main>
 
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

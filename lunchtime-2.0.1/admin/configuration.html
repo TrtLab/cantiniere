@@ -4,40 +4,11 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
-    <script type="text/javascript" src="js/header.js"></script>
 
-    <title>Home admin</title>
+    <title>Configuration</title>
   </head>
   <body>
-    <header>
-      <img src="images/baniere_admin.png" alt="banière">
-    </header>
-    <nav>
-      <div id="menu" class="menu">
-        <div>
-          <a href="index.html"><img src="images/logo.svg" alt="logo Lunctime"></a>
-        </div>
-        <div id="recapCommande" class="itemMenu">
-          <a href="recapCommande.html">Récap des commandes</a>
-        </div>
-        <div id="platsSemaine" class="itemMenu">
-          <a href="platsSemaine.html">Plats de la semaine</a>
-        </div>
-        <div id="carte" class="itemMenu">
-          <a href="carte.html">Carte</a>
-        </div>
-        <div id="compteUtilisateur" class="itemMenu">
-          <a href="compteUtilisateur.html">Compte utilisateur</a>
-        </div>
-        <div id="configuration" class="itemMenu">
-          <a href="configuration.html">Configuration</a>
-        </div>
-        <div id="compte">
-          <p>Bonjour Françoise<p>
-          <img src="images/avatar_admin.svg" alt="avatar admin">
-        </div>
-      </div>
-    </nav>
+    <template component="header.html"></template>
 
     <main>
       <div class="selection">
@@ -75,5 +46,7 @@
     </main>
 
     <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
