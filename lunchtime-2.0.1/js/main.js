@@ -1,9 +1,9 @@
-window.addEventListener("load", async () => {
+window.addEventListener("load", async() => {
 
     console.log("autre coucou");
 
     // Header component
-    const loadComponent = async (template) => {
+    const loadComponent = async(template) => {
         let url = template.getAttribute('component');
         let comp = document.createElement('div');
         url = url;
@@ -14,7 +14,7 @@ window.addEventListener("load", async () => {
         console.log(comp);
     }
 
-    const loadAllComponents = async () => {
+    const loadAllComponents = async() => {
         let comps = document.querySelectorAll("template[component]");
         for (let comp of comps) {
             await loadComponent(comp)
@@ -28,15 +28,9 @@ window.addEventListener("load", async () => {
     console.log($("#monBouton"));
     console.log($("#myModal"));
 
-    $("#monBouton").click(function () {
-        $("#myModal").addClass("modal-on");
-    });
-
-
-
     /**MENU TAB */
 
-    $('.nav-link').click(function (event) {
+    $('.nav-link').click(function(event) {
         event.preventDefault();
 
         let tab = $(this).attr("href");
@@ -56,7 +50,7 @@ window.addEventListener("load", async () => {
     });
 
     /**SCROLLTOP */
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
 
             $('#scrolltop').fadeIn();
@@ -67,7 +61,7 @@ window.addEventListener("load", async () => {
         }
     });
 
-    $('#scrolltop').click(function () {
+    $('#scrolltop').click(function() {
 
         $("html,body").animate({
 
@@ -81,7 +75,7 @@ window.addEventListener("load", async () => {
 
     /**COMMENTAIRES */
 
-    $('#comments-form').submit(function (event) {
+    $('#comments-form').submit(function(event) {
 
         event.preventDefault();
 
@@ -136,7 +130,7 @@ window.addEventListener("load", async () => {
             $('#list-comments').prepend(comments);
 
             $("#success-comments").fadeIn();
-            setTimeout(function () {
+            setTimeout(function() {
                 $("#success-comments").slideUp();
             }, 1000)
 
@@ -144,7 +138,7 @@ window.addEventListener("load", async () => {
 
     });
 
-    $('#close-modal').click(function () {
+    $('#close-modal').click(function() {
 
         $("#success-comments").slideUp();
 
@@ -153,37 +147,37 @@ window.addEventListener("load", async () => {
     console.log($("#monBouton"));
     console.log($("#myModal"));
 
-    $("#monBouton").click(function () {
+    $("#monBouton").click(function() {
         $("#myModal").addClass("modal-on");
     });
 
-    $("#inscription").click(function () {
+    $("#inscription").click(function() {
         $("#modal-inscription").addClass("modal-on");
     });
 
-    $("#mdpoublie").click(function () {
+    $("#mdpoublie").click(function() {
         $("#mdp-modal").addClass("modal-on");
         $("#myModal").removeClass("modal-on");
     });
 
-    $("span").click(function () {
+    $("span").click(function() {
         $("#myModal").removeClass("modal-on");
         $("#modal-inscription").removeClass("modal-on");
         $("#mdp-modal").removeClass("modal-on");
     });
 
-    $("#inscription").click(function () {
+    $("#inscription").click(function() {
         $("#modal-inscription").addClass("modal-on");
     })
 
-    $('#close-modal').click(function () {
+    $('#close-modal').click(function() {
         $("#success-comments").slideUp();
     });
 
     // Cart checkout delete
-    $('.checkout-details').hover(function () {
+    $('.checkout-details').hover(function() {
         $(this).children(".delete").show();
-    }, function () {
+    }, function() {
         $(".delete").hide();
     });
 });

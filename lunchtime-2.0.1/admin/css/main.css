@@ -1,5 +1,389 @@
-*
-{
-  margin: 0;
-  padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noteworthy';
+}
+
+
+/** MENU NAV ITEM*/
+
+.menu-nav-tab {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 90px;
+    padding: 0;
+    padding-top: 2px;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    padding: 0 15px;
+    max-width: 330px;
+    min-width: 230px;
+    margin-bottom: 20px;
+    display: inline-block;
+    flex: 1;
+}
+
+.nav-item .active {
+    border: 1px solid #006ec8;
+    background-color: #fff;
+}
+
+.nav-link {
+    background-color: #f2f8f9;
+    display: flex;
+    text-decoration: none;
+    color: #151515;
+    border: 1px solid #f2f8f9;
+    max-height: 79px;
+    min-width: 246px;
+}
+
+.nav-link i {
+    width: 60px;
+    font-size: 45px;
+    text-align: right;
+    display: block;
+    color: #737373;
+    position: relative;
+    padding: 12px 0px;
+}
+
+.text-link {
+    padding: 18px 50px 12px 15px;
+}
+
+.text-link h5 {
+    font-size: 18px;
+    color: #1b1a1a;
+    font-weight: 500;
+    margin: 0;
+}
+
+.text-link p {
+    font-size: 11px;
+    margin-bottom: 0;
+    font-style: italic;
+    line-height: 2;
+    color: #7e7e7e;
+}
+
+.nav-item .active .text-link h5 {
+    color: #006ec8;
+}
+
+
+/**TAB MENU PANEL*/
+
+.tab-panel {
+    display: none;
+}
+
+.tab-content .fade {
+    display: none;
+}
+
+.tab-content .show {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.menu-tab {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.menu-item {
+    margin-bottom: 45px;
+    cursor: pointer;
+}
+
+.menu-item h5 {
+    color: #7e7e7e;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.menu-item .desc-meta {
+    display: table;
+    width: 100%;
+}
+
+.menu-item .desc-meta p {
+    color: #b6b5b5;
+    font-size: 12px;
+    line-height: normal;
+    display: table-cell;
+    font-style: italic;
+    padding-right: 18px;
+    width: 250px;
+}
+
+.menu-item .desc-meta .menu-price {
+    color: #7e7e7e;
+    display: table-cell;
+    text-align: right;
+    font-size: 17px;
+}
+
+.menu-item .desc-meta .menu-price::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 340px);
+    left: 270px;
+    margin-top: 10px;
+    border-bottom: 2px dotted #dcdcdc;
+}
+
+
+/** RESTAURANT*/
+
+#content-page {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    padding: 6em 6em 6em 6em;
+    box-shadow: 0 6px 20px 0px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+}
+
+.title-page {
+    text-align: center;
+    padding-bottom: 75px;
+    margin: auto;
+}
+
+.title-page i {
+    display: block;
+    color: #8a8a8a;
+    font-size: 65px;
+}
+
+.title-page h2 {
+    font-size: 45px;
+    position: relative;
+    display: inline-block;
+    padding: 0 16px;
+    color: #151515;
+    margin: 0;
+    font-weight: 500;
+}
+
+.title-page h2:before {
+    right: 100%;
+}
+
+.title-page h2:after {
+    margin-left: 20px;
+}
+
+.title-page h2:after,
+.title-page h2:before {
+    position: absolute;
+    content: "";
+    width: 275px;
+    height: 1px;
+    background-color: #006ec8;
+    top: 32px;
+}
+
+
+/** MENU NAV ITEM*/
+
+.menu-nav-tab {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 90px;
+    padding: 0;
+    padding-top: 2px;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    padding: 0 15px;
+    max-width: 330px;
+    min-width: 230px;
+    margin-bottom: 20px;
+    display: inline-block;
+    flex: 1;
+}
+
+.nav-item .active {
+    border: 1px solid #006ec8;
+    background-color: #fff;
+}
+
+.nav-link {
+    background-color: #f2f8f9;
+    display: flex;
+    text-decoration: none;
+    color: #151515;
+    border: 1px solid #f2f8f9;
+    max-height: 79px;
+    min-width: 246px;
+}
+
+.nav-link i {
+    width: 60px;
+    font-size: 45px;
+    text-align: right;
+    display: block;
+    color: #737373;
+    position: relative;
+    padding: 12px 0px;
+}
+
+.text-link {
+    padding: 18px 50px 12px 15px;
+}
+
+.text-link h5 {
+    font-size: 18px;
+    color: #1b1a1a;
+    font-weight: 500;
+    margin: 0;
+}
+
+.text-link p {
+    font-size: 11px;
+    margin-bottom: 0;
+    font-style: italic;
+    line-height: 2;
+    color: #7e7e7e;
+}
+
+.nav-item .active .text-link h5 {
+    color: #006ec8;
+}
+
+
+/**CARTE DU RESTAURANT*/
+
+.tab-container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tab-card .fade {
+    display: none;
+}
+
+.tab-card .show {
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    display: block;
+}
+
+.tab-container h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.tab-container h2 small {
+    font-size: 0.5em;
+}
+
+.responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.responsive-table .table-header {
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.responsive-table .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content .col-1 {
+    flex-basis: 25%;
+}
+
+.tab-content .col-2 {
+    flex-basis: 25%;
+}
+
+.tab-content .col-3 {
+    flex-basis: 40%;
+}
+
+.tab-content .col-4 {
+    flex-basis: 10%;
+}
+
+
+/**Carte restaurant*/
+
+.tab-card .col-1 {
+    flex-basis: 40%;
+}
+
+.tab-card .col-2 {
+    flex-basis: 10%;
+}
+
+.tab-card .col-3 {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.tab-card .col-4 {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.tab-card .col-5 {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .table-header {
+        display: none;
+    }
+    li {
+        display: block;
+    }
+    .col {
+        flex-basis: 100%;
+    }
+    .col {
+        display: flex;
+        padding: 10px 0;
+    }
+    .col::before {
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+    }
 }

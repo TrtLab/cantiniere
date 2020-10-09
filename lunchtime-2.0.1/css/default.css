@@ -7,7 +7,7 @@ body {
     margin: 0px;
     padding: 0px;
     background: #411616;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Noteworthy' !important;
     font-size: 12pt;
     font-weight: 300;
     color: #363636;
@@ -31,9 +31,12 @@ p {
     text-align: justify;
 }
 
+
 /*********************************************************************************/
 
+
 /** WRAPPER */
+
 
 /*********************************************************************************/
 
@@ -54,10 +57,15 @@ p {
     clear: both;
 }
 
+
 /*********************************************************************************/
 
+
 /* PAGE                                                                          */
+
+
 /* contact.html                                                                  */
+
 
 /*********************************************************************************/
 
@@ -92,10 +100,15 @@ p {
     border: 2px solid #151515;
 }
 
+
 /*********************************************************************************/
 
+
 /* RESTAURANT                                                                    */
+
+
 /* restaurant.html                                                               */
+
 
 /*********************************************************************************/
 
@@ -149,9 +162,12 @@ p {
     top: 32px;
 }
 
+
 /*********************************************************************************/
 
+
 /** MENU NAV ITEM*/
+
 
 /*********************************************************************************/
 
@@ -232,19 +248,24 @@ p {
     font-size: 2em;
     padding: 0;
 }
+
 #menu-carte ul {
     font-size: 1em;
     list-style: none;
     padding: 0;
     text-align: center;
 }
+
 #menu-carte li {
     padding-bottom: 1em;
 }
 
+
 /*********************************************************************************/
 
+
 /**TAB MENU PANEL*/
+
 
 /*********************************************************************************/
 
@@ -274,6 +295,7 @@ p {
     flex: 0 0 50%;
     max-width: 50%;
 }
+
 .menu-tab-decaler {
     display: flex;
     flex-direction: column;
@@ -328,9 +350,12 @@ p {
     border-bottom: 2px dotted #dcdcdc;
 }
 
+
 /*********************************************************************************/
 
+
 /** CONTENT */
+
 
 /*********************************************************************************/
 
@@ -338,9 +363,12 @@ p {
     max-width: 790px;
 }
 
+
 /*********************************************************************************/
 
+
 /** MENU */
+
 
 /*********************************************************************************/
 
@@ -389,9 +417,12 @@ p {
     background: #0076c0;
 }
 
+
 /*********************************************************************************/
 
+
 /** BANNER */
+
 
 /*********************************************************************************/
 
@@ -443,9 +474,12 @@ p {
     background-position: bottom;
 }
 
+
 /*********************************************************************************/
 
+
 /**Animation Slider*/
+
 
 /*********************************************************************************/
 
@@ -475,9 +509,12 @@ p {
     }
 }
 
+
 /*********************************************************************************/
 
+
 /**ScrollTop*/
+
 
 /*********************************************************************************/
 
@@ -515,6 +552,8 @@ a#scrolltop {
 
 
 /* Header                                                                        */
+
+
 /* header.html                                                                   */
 
 
@@ -528,11 +567,16 @@ a#scrolltop {
     justify-content: space-between;
 }
 
+
 /*********************************************************************************/
 
 
 /* Heading Titles                                                                */
+
+
 /* Présentation des chefs                                                        */
+
+
 /* All pages                                                                     */
 
 
@@ -583,10 +627,13 @@ a#scrolltop {
     transform: scale(1.2);
 }
 
+
 /*********************************************************************************/
 
 
 /* Logo LUNCHTIME.                                                               */
+
+
 /* All Pages                                                                     */
 
 
@@ -621,8 +668,14 @@ a#scrolltop {
 
 
 /* Menu user                                                                     */
+
+
 /* modales/login-mdl.html                                                        */
+
+
 /* modales/signin-mdl.html                                                       */
+
+
 /* modales/mdp-oublie-mdl.html                                                   */
 
 
@@ -657,10 +710,13 @@ a#scrolltop {
     font-size: 22px;
 }
 
+
 /*********************************************************************************/
 
 
 /* Copyright                                                                     */
+
+
 /* All pages                                                                     */
 
 
@@ -690,7 +746,11 @@ a#scrolltop {
 
 
 /* Portfolio                                                                     */
+
+
 /* Présentation des chefs                                                        */
+
+
 /* All pages                                                                     */
 
 
@@ -735,7 +795,11 @@ a#scrolltop {
 
 
 /* Button Style          (En savoir plus)                                         */
+
+
 /* Bouton en savoir plus sur nos chefs */
+
+
 /* All pages */
 
 
@@ -902,6 +966,8 @@ a#scrolltop {
 
 
 /* Contact Form                                                                  */
+
+
 /* contact.html                                                                  */
 
 
@@ -1006,6 +1072,11 @@ a#scrolltop {
     outline: none;
 }
 
+input::placeholder {
+    font-weight: 500;
+    font-family: 'Noteworthy', sans-serif !important;
+}
+
 .dot {
     color: red;
 }
@@ -1019,11 +1090,14 @@ a#scrolltop {
 
 
 /* Homepage                                                                      */
+
+
 /* all pages */
 
 
 /*********************************************************************************/
-.wrapper-main{
+
+.wrapper-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1032,29 +1106,33 @@ a#scrolltop {
     color: white;
 }
 
-.wrapper-main h1{
+.wrapper-main h1 {
     text-align: center;
 }
+
 
 /*********************************************************************************/
 
 
 /* Weekly Menu                                                                   */
+
+
 /* weekly-meny.html */
 
 
 /*********************************************************************************/
 
-.meal-infos, .meal-checkout{
+.meal-infos,
+.meal-checkout {
     display: flex;
     justify-content: space-around;
 }
 
-.meal-title{
+.meal-title {
     margin-right: 15px;
 }
 
-.meal-title ul{
+.meal-title ul {
     text-align: center;
     list-style: none;
     display: flex;
@@ -1063,7 +1141,7 @@ a#scrolltop {
     height: 80%;
 }
 
-.meal-btn{
+.meal-btn {
     border: red 1px solid;
     padding: 5px;
     width: 100px;
@@ -1074,21 +1152,23 @@ a#scrolltop {
     color: black;
 }
 
-.meal-btn:hover{
+.meal-btn:hover {
     box-shadow: rgb(0, 0, 0) 1px 1px 1px 1px;
 }
 
-.meal-alone, .meal-full{
+.meal-alone,
+.meal-full {
     display: flex
 }
 
-.meal-price{
+.meal-price {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0;
     margin-left: 10px;
 }
+
 
 /*********************************************************************************/
 
@@ -1098,24 +1178,24 @@ a#scrolltop {
 
 /*********************************************************************************/
 
-.checkouts{
+.checkouts {
     width: 60%;
     padding: 20px;
 }
 
-.checkout-details{
+.checkout-details {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.v-c{
+.v-c {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.cart-details{
+.cart-details {
     width: 30%;
     padding: 20px;
     position: absolute;
@@ -1123,15 +1203,15 @@ a#scrolltop {
     text-align: center;
 }
 
-.cart-details p{
+.cart-details p {
     text-align: center;
 }
 
-.wrapper-cart{
+.wrapper-cart {
     min-height: 300px;
 }
 
-.delete{
+.delete {
     display: none;
 }
 
@@ -1182,18 +1262,27 @@ a#scrolltop {
     }
 }
 
+
 /*********************************************************************************/
 
 
 /* Modale de connexion/inscrption                                                */
+
+
 /* modales/login-mdl.html */
+
+
 /* modales/signin-mdl.html */
+
+
 /* modales/mdp-oublie-mdl.html */
 
 
 /*********************************************************************************/
 
+
 /* Bouton de connexion */
+
 .connect-btn {
     background-color: #333333;
     color: whitesmoke;
@@ -1201,29 +1290,41 @@ a#scrolltop {
     text-decoration: none;
     letter-spacing: 0.8px;
     border: none;
+    font-family: 'Noteworthy';
 }
 
+
 /* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     right: 0;
-    width: 25%; /* Full width */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    -webkit-animation-name: fadeIn; /* Fade in the background */
+    width: 25%;
+    /* Full width */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation-name: fadeIn;
+    /* Fade in the background */
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s;
-  }
+}
 
-  .modal-on {
-      display: block;
-  }
-  
-  /* Modal Content */
-  .modal-content {
+.modal-on {
+    display: block;
+}
+
+
+/* Modal Content */
+
+.modal-content {
     position: fixed;
     top: 70px;
     width: 20%;
@@ -1234,57 +1335,59 @@ a#scrolltop {
     animation-name: slideIn;
     animation-duration: 0.4s;
     border-radius: 3%;
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+
+/* The Close Button */
+
+.close {
     color: whitesmoke;
     float: right;
     margin-right: 3%;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: whitesmoke;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .modal-body {
-      padding: 2px 16px;
-    }
-  
-  .modal-footer {
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
     padding: 8px 16px;
     background-color: #333333;
     color: white;
-  }
+}
 
-  #mdpoublie {
+#mdpoublie {
     color: whitesmoke;
     font-size: smaller;
     letter-spacing: 0.8px;
     text-align: center;
-  }
+}
 
-  .form-modal {
-      padding-top: 1rem;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-  }
+.form-modal {
+    padding-top: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
 
-  label {
-      margin-bottom: 0.5rem;
-  }
+label {
+    margin-bottom: 0.5rem;
+}
 
-  .bouton {
-      display: flex;
-      justify-content: center;
-      margin-top: 1em;
-  }
+.bouton {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
 
 .modal-btn {
     border-style: none;
@@ -1294,6 +1397,7 @@ a#scrolltop {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.8px;
+    font-family: 'Noteworthy';
 }
 
 .modal-footer {
@@ -1303,24 +1407,45 @@ a#scrolltop {
     margin-bottom: 1em;
 }
 
-  
-  /* Add Animation */
-  @-webkit-keyframes slideIn {
-    from {top: -300px; opacity: 0} 
-    to {top: 0; opacity: 1}
-  }
-  
-  @keyframes slideIn {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-  }
-  
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
-  }
+
+/* Add Animation */
+
+@-webkit-keyframes slideIn {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
