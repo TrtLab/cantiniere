@@ -16,17 +16,6 @@ $(document).ready(function() {
         let comps = document.querySelectorAll("template[component]");
         comps.forEach(loadComponent)
     }
-<<<<<<< HEAD
-    
-    window.addEventListener('load', ()=>{
-        loadAllComponents();
-    });
-
-    /**MENU TAB */
-
-    $('.nav-link').click(function(event) {
-
-=======
 
     // window.addEventListener('load', ()=>{
     await loadAllComponents();
@@ -37,7 +26,6 @@ $(document).ready(function() {
 
     $('.nav-link').click(function (event) {
         
->>>>>>> 95a85fb57269bd04eb1ba741b841f75e0d642b88
         event.preventDefault();
         
         let tab = $(this).attr("href");
@@ -57,13 +45,8 @@ $(document).ready(function() {
     });
 
     /**SCROLLTOP */
-<<<<<<< HEAD
-
-    $(window).scroll(function() {
-=======
     
     $(window).scroll(function () {
->>>>>>> 95a85fb57269bd04eb1ba741b841f75e0d642b88
 
         if ($(this).scrollTop() > 200) {
 
@@ -74,15 +57,9 @@ $(document).ready(function() {
             $('#scrolltop').fadeOut();
         }
     });
-<<<<<<< HEAD
-
-    $('#scrolltop').click(function() {
-
-=======
     
     $('#scrolltop').click(function () {
         
->>>>>>> 95a85fb57269bd04eb1ba741b841f75e0d642b88
         $("html,body").animate({
             
             scrollTop: 0
@@ -94,15 +71,9 @@ $(document).ready(function() {
     
     
     /**COMMENTAIRES */
-<<<<<<< HEAD
-
-    $('#comments-form').submit(function(event) {
-
-=======
     
     $('#comments-form').submit(function (event) {
         
->>>>>>> 95a85fb57269bd04eb1ba741b841f75e0d642b88
         event.preventDefault();
         
         let data = $('#comments-form').serializeArray();
@@ -156,33 +127,20 @@ $(document).ready(function() {
                 $('#list-comments').prepend(comments);
                 
             $("#success-comments").fadeIn();
-<<<<<<< HEAD
-
-            setTimeout(function() {
-=======
             
             setTimeout(function () {
->>>>>>> 95a85fb57269bd04eb1ba741b841f75e0d642b88
                 $("#success-comments").slideUp();
             }, 1000)
 
         }
         
     });
-<<<<<<< HEAD
-
-    $('#close-modal').click(function() {
-
-=======
     
     $('#close-modal').click(function () {
         
->>>>>>> 95a85fb57269bd04eb1ba741b841f75e0d642b88
         $("#success-comments").slideUp();
         
     });
-<<<<<<< HEAD
-=======
 
     console.log($("#monBouton"));
     console.log($("#myModal"));
@@ -205,5 +163,4 @@ $(document).ready(function() {
         $("#modal-inscription").removeClass("modal-on");
         $("#mdp-modal").removeClass("modal-on");
     });
->>>>>>> 95a85fb57269bd04eb1ba741b841f75e0d642b88
 });
