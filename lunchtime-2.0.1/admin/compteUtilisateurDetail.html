@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/compteUtilisateurDetail.css">
-    <script type="text/javascript" src="js/utils.js"></script>
-    <title>Profil de Kévin Lorem</title>
+
+    <title>Détail du profil de Kévin Lorem</title>
 </head>
 
 <body>
-    <template component="inc/header.html"></template>
+    <template component="header.html"></template>
 
     <main>
         <div class="infoClient">
@@ -26,7 +26,7 @@
             <div>
                 <div class="carte">
                     <img src="images/icon_cb.svg" alt="icon cb">
-                    <p>11,00</p>
+                    <p id="soldeActu">11,00</p>
                 </div>
                 <div class="button">
                     <button type="button" name="crediter" id="crediter">Créditer</button>
@@ -69,7 +69,27 @@
                 <div>Flan caramel</div>
             </div>
         </div>
+        <div id="modalCrediter" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Qu'elle est la somme à créditer ?</h2>
+                </div>
+                <div class="modal-body">
+                    <input type="number" id="sommeCrediter"></input>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" name="crediter" id="valider">Valider</button>
+                    <button type="button" name="solder" id="annuler">Annuler</button>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
