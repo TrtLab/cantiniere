@@ -21,10 +21,7 @@ window.addEventListener("load", async () => {
         }
     }
 
-    // window.addEventListener('load', ()=>{
     await loadAllComponents();
-    // });
-
     
     /**MENU TAB */
 

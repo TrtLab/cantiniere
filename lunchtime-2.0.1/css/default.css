@@ -31,8 +31,11 @@ p {
     text-align: justify;
 }
 
+/*********************************************************************************/
 
 /** WRAPPER */
+
+/*********************************************************************************/
 
 #wrapper {
     background: #fff;
@@ -51,8 +54,12 @@ p {
     clear: both;
 }
 
+/*********************************************************************************/
 
-/** PAGE */
+/* PAGE                                                                          */
+/* contact.html                                                                  */
+
+/*********************************************************************************/
 
 #page {
     position: relative;
@@ -85,8 +92,12 @@ p {
     border: 2px solid #151515;
 }
 
+/*********************************************************************************/
 
-/** RESTAURANT*/
+/* RESTAURANT                                                                    */
+/* restaurant.html                                                               */
+
+/*********************************************************************************/
 
 #restaurant {
     position: relative;
@@ -138,7 +149,11 @@ p {
     top: 32px;
 }
 
+/*********************************************************************************/
+
 /** MENU NAV ITEM*/
+
+/*********************************************************************************/
 
 .menu-nav-tab {
     display: flex;
@@ -206,8 +221,11 @@ p {
     color: red;
 }
 
+/*********************************************************************************/
 
 /**TAB MENU PANEL*/
+
+/*********************************************************************************/
 
 .tab-panel {
     display: none;
@@ -278,15 +296,21 @@ p {
     border-bottom: 2px dotted #dcdcdc;
 }
 
+/*********************************************************************************/
 
 /** CONTENT */
+
+/*********************************************************************************/
 
 #content {
     max-width: 790px;
 }
 
+/*********************************************************************************/
 
 /** MENU */
+
+/*********************************************************************************/
 
 #menu-wrapper {
     background: #5c99ce;
@@ -333,8 +357,11 @@ p {
     background: #0076c0;
 }
 
+/*********************************************************************************/
 
 /** BANNER */
+
+/*********************************************************************************/
 
 #banner {
     display: block;
@@ -384,8 +411,11 @@ p {
     background-position: bottom;
 }
 
+/*********************************************************************************/
 
 /**Animation Slider*/
+
+/*********************************************************************************/
 
 .fade {
     -webkit-animation-name: fade;
@@ -413,8 +443,11 @@ p {
     }
 }
 
+/*********************************************************************************/
 
 /**ScrollTop*/
+
+/*********************************************************************************/
 
 a#scrolltop {
     position: fixed;
@@ -450,6 +483,7 @@ a#scrolltop {
 
 
 /* Header                                                                        */
+/* header.html                                                                   */
 
 
 /*********************************************************************************/
@@ -462,49 +496,12 @@ a#scrolltop {
     justify-content: space-between;
 }
 
-
-/*********************************************************************************/
-
-
-/* Welcome                                                                       */
-
-
-/*********************************************************************************/
-
-#welcome {
-    overflow: hidden;
-    padding: 5em 0em;
-    border-bottom: 1px solid #E5E5E5;
-    text-align: center;
-}
-
-#welcome h2 {
-    letter-spacing: 0.20em;
-    text-transform: uppercase;
-    font-size: 2.6em;
-}
-
-#welcome p {
-    font-size: 1.3em;
-}
-
-#welcome .byline {
-    display: block;
-    margin: auto;
-    padding: 0em 0em 1.5em 0em;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1.2em;
-    color: #6F6F6F;
-    text-align: center;
-}
-
-
 /*********************************************************************************/
 
 
 /* Heading Titles                                                                */
+/* Présentation des chefs                                                        */
+/* All pages                                                                     */
 
 
 /*********************************************************************************/
@@ -554,208 +551,11 @@ a#scrolltop {
     transform: scale(1.2);
 }
 
-
 /*********************************************************************************/
 
 
-/* List Styles                                                                   */
-
-
-/*********************************************************************************/
-
-
-/**Search Widget*/
-
-.search-widget {
-    margin-bottom: 57px;
-}
-
-.search-widget input {
-    width: 200px;
-    border: none;
-    padding: 0 15px 18px;
-    padding-right: 40px;
-    background-color: transparent;
-    font-size: 12px;
-    color: #828282;
-    border-bottom: 3px solid #0076c0;
-    outline: none;
-}
-
-.search-widget input::placeholder {
-    font-weight: 500;
-    font-family: 'Chivo', sans-serif;
-}
-
-.search-widget button {
-    position: relative;
-    background: none;
-    border: none;
-    top: -40px;
-    left: 220px;
-    color: #828282;
-    font-size: 18px;
-    outline: none;
-}
-
-
-/**Menu Styles List*/
-
-ul.style1 {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-ul.style1 li {
-    border-top: solid 1px #E5E5E5;
-    padding: 0.80em 0;
-}
-
-ul.style1 li:first-child {
-    border-top: 0;
-    padding-top: 0;
-}
-
-.style1 a {
-    color: #aaa;
-}
-
-.style1 a:hover {
-    color: #fff;
-}
-
-ul.style2 {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-ul.style2 li {
-    color: #000;
-    padding: 0.80em 0;
-    border-top: 1px solid #e5e5e5;
-}
-
-ul.style2 li:first-child {
-    border-top: 0;
-    padding-top: 0;
-}
-
-.style2 a {
-    color: #101010;
-    text-decoration: none;
-    display: block;
-    padding: 3px;
-}
-
-.style2 a:hover {
-    color: #808080;
-}
-
-
-/**Lastest Styles List*/
-
-ul.lastest-posts {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.lastest-posts a {
-    color: #101010;
-    text-decoration: none;
-    display: block;
-    padding: 3px;
-}
-
-.lastest-posts {
-    display: flex;
-    flex-direction: column;
-}
-
-.lastest-posts li a {
-    display: flex;
-}
-
-.lp-thumb {
-    height: 72px;
-    width: 70px;
-    float: left;
-}
-
-.lp-content {
-    padding-left: 25px;
-}
-
-.lp-content .dot {
-    font-size: 12px;
-}
-
-.lp-content h6 {
-    font-size: 16px;
-    padding: 0px;
-    margin: 5px 0px;
-}
-
-.lp-content p {
-    font-size: 12px;
-    font-style: italic;
-    color: #7b7b7b;
-}
-
-
-/*********************************************************************************/
-
-
-/* Social Icon Styles                                                            */
-
-
-/*********************************************************************************/
-
-ul.contact {
-    margin: 0;
-    padding: 1.5em 0em 2.5em 0em;
-    list-style: none;
-}
-
-ul.contact li {
-    display: inline-block;
-    padding: 0em 0.30em;
-    font-size: 1em;
-}
-
-ul.contact li span {
-    display: none;
-    margin: 0;
-    padding: 0;
-}
-
-ul.contact li a {
-    display: inline-block;
-    background: #3f3f3f;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 20px;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-}
-
-
-/**ul.contact li a:before {}*/
-
-ul.contact li a:hover {
-    background: #fff;
-    color: #3f3f3f;
-}
-
-
-/*********************************************************************************/
-
-
-/* Logo                                                                          */
+/* Logo LUNCHTIME.                                                               */
+/* All Pages                                                                     */
 
 
 /*********************************************************************************/
@@ -789,6 +589,9 @@ ul.contact li a:hover {
 
 
 /* Menu user                                                                     */
+/* modales/login-mdl.html                                                        */
+/* modales/signin-mdl.html                                                       */
+/* modales/mdp-oublie-mdl.html                                                   */
 
 
 /*********************************************************************************/
@@ -822,33 +625,11 @@ ul.contact li a:hover {
     font-size: 22px;
 }
 
-
-/*********************************************************************************/
-
-
-/* Sidebar                                                                       */
-
-
-/*********************************************************************************/
-
-#sidebar {
-    max-width: 345px;
-    padding-right: 150px;
-}
-
-#sidebar .title h2 {
-    font-size: 1.6em;
-}
-
-#sidebar .box2 {
-    margin-bottom: 3em;
-}
-
-
 /*********************************************************************************/
 
 
 /* Copyright                                                                     */
+/* All pages                                                                     */
 
 
 /*********************************************************************************/
@@ -877,6 +658,8 @@ ul.contact li a:hover {
 
 
 /* Portfolio                                                                     */
+/* Présentation des chefs                                                        */
+/* All pages                                                                     */
 
 
 /*********************************************************************************/
@@ -920,6 +703,8 @@ ul.contact li a:hover {
 
 
 /* Button Style          (En savoir plus)                                         */
+/* Bouton en savoir plus sur nos chefs */
+/* All pages */
 
 
 /*********************************************************************************/
@@ -1085,6 +870,7 @@ ul.contact li a:hover {
 
 
 /* Contact Form                                                                  */
+/* contact.html                                                                  */
 
 
 /*********************************************************************************/
@@ -1200,90 +986,8 @@ ul.contact li a:hover {
 /*********************************************************************************/
 
 
-/* Commentaire Form                                                              */
-
-
-/*********************************************************************************/
-
-.row .form-comments {
-    display: block;
-    margin: auto;
-    text-align: center;
-    font-size: 16px;
-    padding-top: 5px;
-}
-
-.form-comments label {
-    display: block;
-    min-width: 500px;
-    font-weight: normal;
-    color: #006ec8;
-    text-align: left;
-    padding: 15px 15px 15px 0px;
-    font-size: 15px;
-}
-
-.form-comments .form-control {
-    padding: 15px;
-    font-size: 16px;
-    font-family: Arial;
-    min-width: 500px !important;
-    margin: 0;
-    display: block;
-    border: 1px solid rgb(195, 195, 195);
-    border-radius: 8px !important;
-    outline: none !important;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgba(0, 0, 0, 0.87);
-    cursor: inherit;
-    font: inherit;
-    height: 100%;
-    box-sizing: border-box;
-    box-shadow: none !important;
-}
-
-.form-comments .form-control:focus {
-    border: 1px solid #006ec8;
-    border-radius: 8px;
-    animation-direction: left;
-}
-
-.form-comments textarea {
-    min-height: 200px;
-    max-width: 500px;
-    border-bottom: 0px;
-    resize: none;
-    font: inherit;
-    padding: 0px;
-    cursor: inherit;
-    position: relative;
-    border: none;
-    outline: none;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgba(0, 0, 0, 0.87);
-    box-sizing: border-box;
-}
-
-.form-comments .comments-btn {
-    border: 0px;
-    background-color: #006ec8 !important;
-    color: white !important;
-    font-size: 16px !important;
-    min-width: 500px !important;
-    margin: 0px;
-    float: left;
-    cursor: pointer !important;
-    box-shadow: 0 6px 20px 0px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-    border-radius: 2px !important;
-    padding: 15px !important;
-    border-radius: 5px !important;
-    outline: none;
-}
-
-/*********************************************************************************/
-
-
-/* Homepage                                                             */
+/* Homepage                                                                      */
+/* all pages */
 
 
 /*********************************************************************************/
@@ -1300,10 +1004,11 @@ ul.contact li a:hover {
     text-align: center;
 }
 
-    /*********************************************************************************/
+/*********************************************************************************/
 
 
-/* Weekly Menu                                                             */
+/* Weekly Menu                                                                   */
+/* weekly-meny.html */
 
 
 /*********************************************************************************/
@@ -1404,6 +1109,9 @@ ul.contact li a:hover {
 
 
 /* Modale de connexion/inscrption                                                */
+/* modales/login-mdl.html */
+/* modales/signin-mdl.html */
+/* modales/mdp-oublie-mdl.html */
 
 
 /*********************************************************************************/
