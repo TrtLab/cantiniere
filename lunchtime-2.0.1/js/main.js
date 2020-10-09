@@ -118,6 +118,7 @@ window.addEventListener("load", async () => {
                 '<div class="avatar-profil">' +
 
                 '<img src="images/default.png" alt="Photo de profil de ' + firstname + '">' +
+<<<<<<< HEAD
                 
                     '</div>' +
                     
@@ -177,3 +178,43 @@ window.addEventListener("load", async () => {
         })
 
     })
+=======
+
+                '</div>' +
+
+                '<div class="infos-comments">' +
+
+                '<p class="infos-user-comments"><span class="dot">' + firstname + '</span> • Il y a 3 heures</p>' +
+
+                '<p class="comments">' + message + '</p>' +
+
+                '<a href="#" class="dot">Répondre</a> • <a href="#" class="alert">Signaler</a>' +
+
+                '</div>' +
+
+                '</div>';
+
+            $('#list-comments').prepend(comments);
+
+            $("#success-comments").fadeIn();
+
+            setTimeout(function() {
+                $("#success-comments").slideUp();
+            }, 1000)
+
+        }
+
+    });
+
+    $('#close-modal').click(function() {
+        $("#success-comments").slideUp();
+    });
+
+    // Cart checkout delete
+    $('.checkout-details').hover(function () {
+        $(this).children(".delete").show();
+    }, function(){
+        $(".delete").hide();
+    });
+});
+>>>>>>> header

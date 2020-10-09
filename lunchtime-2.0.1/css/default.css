@@ -134,7 +134,11 @@ p {
     content: "";
     width: 275px;
     height: 1px;
+<<<<<<< HEAD
     background-color: #dadada;
+=======
+    background-color: red;
+>>>>>>> header
     top: 32px;
 }
 
@@ -1332,7 +1336,7 @@ ul.contact li a:hover {
     text-align: center;
 }
 
-    /*********************************************************************************/
+/*********************************************************************************/
 
 
 /* Weekly Menu                                                             */
@@ -1383,6 +1387,51 @@ ul.contact li a:hover {
     justify-content: center;
     margin: 0;
     margin-left: 10px;
+}
+
+/*********************************************************************************/
+
+
+/* Cart                                                            */
+
+
+/*********************************************************************************/
+
+.checkouts{
+    width: 60%;
+    padding: 20px;
+}
+
+.checkout-details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.v-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart-details{
+    width: 30%;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.cart-details p{
+    text-align: center;
+}
+
+.wrapper-cart{
+    min-height: 300px;
+}
+
+.delete{
+    display: none;
 }
 
 @media screen and (max-width: 1280px) {
