@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/compteUtilisateurDetail.css">
+
+    <title>Détail du profil de Kévin Lorem</title>
+  </head>
+  <body>
+    <template component="header.html"></template>
+
+    <main>
+      <div class="infoClient">
+        <div>
+          <img src="images/avatar_client.svg" alt="avatar client">
+        </div>
+        <div class="info">
+          <label>Nom: Lorem</label>
+          <label>Prénom: Kévin</label>
+          <label>Email: kevinlorem@test.com</label>
+        </div>
+        <div>
+          <div class="carte">
+            <img src="images/icon_cb.svg" alt="icon cb">
+            <p id="soldeActu">11,00</p>
+          </div>
+          <div class="button">
+            <button type="button" name="crediter" id="crediter">Créditer</button>
+            <button type="button" name="solder" id="solder">Solder</button>
+          </div>
+        </div>
+      </div>
+      <div class="commandesCours">
+        <div class="label">
+          <label>Commande en cours</label>
+        </div>
+        <div class="carteCommande">
+          <label class="titre">Lundi</label>
+          <div>Plat 1 Formule</div>
+          <div>Coca</div>
+          <div>Flan caramel</div>
+        </div>
+        <div class="carteCommande">
+          <label class="titre">Mardi</label>
+          <div>Plat 1 Formule</div>
+          <div>Coca</div>
+          <div>Flan caramel</div>
+        </div>
+        <div class="carteCommande">
+          <label class="titre">Mercredi</label>
+          <div>Plat 1 Formule</div>
+          <div>Coca</div>
+          <div>Flan caramel</div>
+        </div>
+        <div class="carteCommande">
+          <label class="titre">Jeudi</label>
+          <div>Plat 1 Formule</div>
+          <div>Coca</div>
+          <div>Flan caramel</div>
+        </div>
+        <div class="carteCommande">
+          <label class="titre">Vendredi</label>
+          <div>Plat 1 Formule</div>
+          <div>Coca</div>
+          <div>Flan caramel</div>
+        </div>
+      </div>
+      <div id="modalCrediter" class="modal">
+      <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Qu'elle est la somme à créditer ?</h2>
+          </div>
+          <div class="modal-body">
+            <input type="number" id="sommeCrediter"></input>
+          </div>
+          <div class="modal-footer">
+            <button type="button" name="crediter" id="valider">Valider</button>
+            <button type="button" name="solder" id="annuler">Annuler</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

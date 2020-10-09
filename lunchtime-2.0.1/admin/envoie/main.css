@@ -1,0 +1,80 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+.selection
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1%
+}
+
+.selection > button
+{
+  width: 14rem;
+  height: 4rem;
+  border-radius: 1rem;
+}
+
+.active
+{
+  background: #FD5757;
+  color: #7D7D7D;
+  font-size: 1.2rem;
+}
+
+.nonActive
+{
+  background: #3A3335;
+  color: #7D7D7D;
+  font-size: 1.2rem;
+}
+
+.nbRepas
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+table
+{
+  border: 1px solid;
+  border-color: #FD5757;
+  width: 45rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+td
+{
+  border: 1px solid;
+  border-color: #FD5757;
+}
+
+.head
+{
+  background: #3A3335;
+}
+
+.valider
+{
+  background: #20D64A;
+  color: white;
+  font-size: 1.5rem;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 1rem;
+  margin-top: 1%
+}
+
+.affichage
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

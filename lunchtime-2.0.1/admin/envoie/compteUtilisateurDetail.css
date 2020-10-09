@@ -1,0 +1,150 @@
+.infoClient
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2% 0;
+}
+
+.infoClient > div > img
+{
+  width: 60%;
+}
+
+.carte
+{
+  background: #FD2D2D;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2rem;
+  height: 5rem;
+  width: 11rem;
+}
+
+.info
+{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  color: #7D7D7D;
+}
+
+.commandesCours
+{
+  background: #FD2D2D;
+  border-radius: 2rem;
+  margin: 3%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.label
+{
+  width: 100rem;
+  height: 2rem;
+  margin: 1% 0px;
+}
+
+.label > label
+{
+  font-size: 1.9rem;
+  color: #7D7D7D;
+  margin: 4% 0 0 0;
+}
+
+.carteCommande
+{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  color: #7D7D7D;
+  background: white;
+  width: calc(100%/4);
+  margin: 2%;
+  border-radius: 0.5rem;
+  align-content: center;
+  text-align: center;
+}
+
+.carteCommande > label
+{
+  font-size: 2.4rem;
+  color: #7D7D7D;
+  text-decoration: underline;
+}
+
+.carteCommande > div
+{
+  margin: 2% 0;
+  font-size: 1.8rem;
+}
+
+button
+{
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5%;
+  margin: 3% 0;
+}
+
+.button
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+#crediter
+{
+  background: #20D64A;
+  color: white;
+  font-size: 1rem;
+}
+
+#solder
+{
+  background: #FF0000;
+  color: white;
+  font-size: 1rem;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
