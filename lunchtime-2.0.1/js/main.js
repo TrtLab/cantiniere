@@ -139,4 +139,11 @@ $(document).ready(function() {
         $("#success-comments").slideUp();
 
     });
+
+    // Cart checkout delete
+    $('.checkout-details').hover(function () {
+        $(this).children(".delete").show();
+    }, function(){
+        $(".delete").hide();
+    });
 });
