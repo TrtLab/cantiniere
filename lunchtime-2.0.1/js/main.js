@@ -1,6 +1,4 @@
-window.addEventListener("load", async () => {
-
-    console.log("autre coucou");
+$(document).ready(function() {
 
     // Header component
     const loadComponent = async (template) => {
@@ -12,28 +10,19 @@ window.addEventListener("load", async () => {
         comp.innerHTML = src;
         template.replaceWith(comp);
     }
-
-    const loadAllComponents = async () => {
-        let comps = document.querySelectorAll("template[component]");
-        for (let comp of comps){
-            await loadComponent(comp)
-        }
-    }
-
-    // window.addEventListener('load', ()=>{
-    await loadAllComponents();
-    // });
-
-    console.log($("#monBouton"));
-    console.log($("#myModal"));
     
-    $("#monBouton").click(function () {
-        $("#myModal").addClass("modal-on");
+    const loadAllComponents = () => {
+        let comps = document.querySelectorAll("template[component]");
+        comps.forEach(loadComponent)
+    }
+    
+    window.addEventListener('load', ()=>{
+        loadAllComponents();
     });
 
     /**MENU TAB */
 
-    $('.nav-link').click(function (event) {
+    $('.nav-link').click(function(event) {
 
         event.preventDefault();
 
@@ -55,7 +44,7 @@ window.addEventListener("load", async () => {
 
     /**SCROLLTOP */
 
-    $(window).scroll(function () {
+    $(window).scroll(function() {
 
         if ($(this).scrollTop() > 200) {
 
@@ -67,7 +56,7 @@ window.addEventListener("load", async () => {
         }
     });
 
-    $('#scrolltop').click(function () {
+    $('#scrolltop').click(function() {
 
         $("html,body").animate({
 
@@ -81,7 +70,7 @@ window.addEventListener("load", async () => {
 
     /**COMMENTAIRES */
 
-    $('#comments-form').submit(function (event) {
+    $('#comments-form').submit(function(event) {
 
         event.preventDefault();
 
@@ -137,7 +126,7 @@ window.addEventListener("load", async () => {
 
             $("#success-comments").fadeIn();
 
-            setTimeout(function () {
+            setTimeout(function() {
                 $("#success-comments").slideUp();
             }, 1000)
 
@@ -145,14 +134,9 @@ window.addEventListener("load", async () => {
 
     });
 
-    $('#close-modal').click(function () {
+    $('#close-modal').click(function() {
 
         $("#success-comments").slideUp();
 
     });
-
-    $("#inscription").click(function () {
-        $("#modal-inscription").addClass("modal-on");
-    })
-
 });

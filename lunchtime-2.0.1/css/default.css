@@ -134,9 +134,10 @@ p {
     content: "";
     width: 275px;
     height: 1px;
-    background-color: #dadada;
+    background-color: #006ec8;
     top: 32px;
 }
+
 
 /** MENU NAV ITEM*/
 
@@ -161,16 +162,16 @@ p {
 }
 
 .nav-item .active {
-    border: 1px solid #F75151;
-    background-color: #F75151;
+    border: 1px solid #006ec8;
+    background-color: #fff;
 }
 
 .nav-link {
-    background-color: #FFFFFF;
+    background-color: #f2f8f9;
     display: flex;
     text-decoration: none;
-    color: #F75151;
-    border: 1px solid #F75151;
+    color: #151515;
+    border: 1px solid #f2f8f9;
     max-height: 79px;
     min-width: 246px;
 }
@@ -205,7 +206,7 @@ p {
 }
 
 .nav-item .active .text-link h5 {
-    color: #ffffff;
+    color: #000000;
 }
 
 #menu-carte {
@@ -1399,6 +1400,7 @@ ul.contact li a:hover {
     border: none;
 }
 
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -1413,17 +1415,12 @@ ul.contact li a:hover {
     animation-name: fadeIn;
     animation-duration: 0.4s;
   }
-
-  .modal-on {
-      display: block;
-  }
   
   /* Modal Content */
   .modal-content {
     position: fixed;
     top: 70px;
     width: 20%;
-    padding-bottom: 1em;
     background-color: #333333;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
