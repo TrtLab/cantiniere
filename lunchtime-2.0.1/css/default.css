@@ -134,11 +134,7 @@ p {
     content: "";
     width: 275px;
     height: 1px;
-<<<<<<< HEAD
-    background-color: #dadada;
-=======
     background-color: red;
->>>>>>> header
     top: 32px;
 }
 
