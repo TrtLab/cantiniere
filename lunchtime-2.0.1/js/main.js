@@ -11,6 +11,7 @@ window.addEventListener("load", async () => {
         src = src.trim();
         comp.innerHTML = src;
         template.replaceWith(comp);
+        console.log(comp);
     }
 
     const loadAllComponents = async () => {
