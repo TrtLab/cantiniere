@@ -134,7 +134,7 @@ p {
     content: "";
     width: 275px;
     height: 1px;
-    background-color: #006ec8;
+    background-color: red;
     top: 32px;
 }
 

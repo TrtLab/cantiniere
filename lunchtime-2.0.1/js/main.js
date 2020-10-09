@@ -135,9 +135,7 @@ $(document).ready(function() {
     });
 
     $('#close-modal').click(function() {
-
         $("#success-comments").slideUp();
-
     });
 
     // Cart checkout delete
