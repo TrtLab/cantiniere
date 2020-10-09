@@ -15,6 +15,12 @@ nav
   align-items: center;
 }
 
+.menu > div > a
+{
+    color: white;
+    text-decoration: none;
+}
+
 .menu > div > p
 {
   display: flex;
@@ -27,4 +33,15 @@ nav
 #compte
 {
   display: flex;
+}
+
+
+.menu > div > a:hover
+{
+  color : #BD2222;
+}
+
+.menu > div > a:active
+{
+  color : #FD2D2D;
 }
