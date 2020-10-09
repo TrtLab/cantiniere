@@ -148,20 +148,18 @@ p {
     padding-top: 2px;
     list-style: none;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .nav-item {
     padding: 0 15px;
     max-width: 330px;
-    min-width: 230px;
     margin-bottom: 20px;
     display: inline-block;
     flex: 1;
 }
 
 .nav-item .active {
-    border: 1px solid #006ec8;
+    border: 1px solid red;
     background-color: #fff;
 }
 
@@ -172,7 +170,6 @@ p {
     color: #151515;
     border: 1px solid #f2f8f9;
     max-height: 79px;
-    min-width: 246px;
 }
 
 .nav-link i {
@@ -186,7 +183,8 @@ p {
 }
 
 .text-link {
-    padding: 18px 50px 12px 15px;
+    padding: 15px;
+    margin: auto;
 }
 
 .text-link h5 {
@@ -205,7 +203,7 @@ p {
 }
 
 .nav-item .active .text-link h5 {
-    color: #006ec8;
+    color: red;
 }
 
 
@@ -222,7 +220,7 @@ p {
 .tab-content .show {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 1050px;
     margin: auto;
 }
@@ -1300,7 +1298,60 @@ ul.contact li a:hover {
 
 .wrapper-main h1{
     text-align: center;
-    }
+}
+
+    /*********************************************************************************/
+
+
+/* Weekly Menu                                                             */
+
+
+/*********************************************************************************/
+
+.meal-infos, .meal-checkout{
+    display: flex;
+    justify-content: space-around;
+}
+
+.meal-title{
+    margin-right: 15px;
+}
+
+.meal-title ul{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+}
+
+.meal-btn{
+    border: red 1px solid;
+    padding: 5px;
+    width: 100px;
+    background: none;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.meal-btn:hover{
+    box-shadow: rgb(0, 0, 0) 1px 1px 1px 1px;
+}
+
+.meal-alone, .meal-full{
+    display: flex
+}
+
+.meal-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    margin-left: 10px;
+}
 
 @media screen and (max-width: 1280px) {
     #sidebar {
@@ -1347,6 +1398,7 @@ ul.contact li a:hover {
     #box3 {
         margin-top: 20px;
     }
+<<<<<<< HEAD
 }
 
 /*********************************************************************************/
@@ -1488,3 +1540,6 @@ ul.contact li a:hover {
     from {opacity: 0} 
     to {opacity: 1}
   }
+=======
+}
+>>>>>>> header
